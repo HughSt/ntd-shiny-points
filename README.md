@@ -6,11 +6,11 @@ his application is designed to help understand whether having village level pred
 
 To use the app, you need to provide a .csv file of point level data (e.g. villages or schools) containing at least the following columns (demo data provided using the link). 
 
-id - the ID code of the point (can be character or numeric)
-lat - the latitude in decimal degrees
-lng - the longitude in decimal degrees
-n_trials - the number of people examined/tested 
-n_positive - the number of people testing positive
+- `id` - the ID code of the point (can be character or numeric)
+- `lat` - the latitude in decimal degrees
+- `lng` - the longitude in decimal degrees
+- `n_trials` - the number of people examined/tested 
+- `n_positive` - the number of people testing positive
 
 You also need to set 2 parameters. 
 
@@ -18,9 +18,7 @@ You also need to set 2 parameters.
 
 **Select number of sites to adaptively select** - If you are using this tool to obtain recommendations on the optimal locations to conduct further surveys, this sets the number of sites you wish to receive recommendations for. 
 
-The application will make predictions at each location provided in the .csv file. If you wish to obtain predictions (preicted prevalence, probability of being a hotspot) you can include locations in the .csv file, leaving the n_trials and n_positive columns blank. An example of the expected input file is shown below.
-
-![](https://www.dropbox.com/s/f6gmxcwrxpxmdii/demo_data.png)
+The application will make predictions at each location provided in the .csv file. If you wish to obtain predictions (preicted prevalence, probability of being a hotspot) you can include locations in the .csv file, leaving the n_trials and n_positive columns blank. An example of the expected input file can be found [here](https://www.dropbox.com/s/l6t9cx51805to7n/Sh_liberia_withNA.csv?dl=1).
 
 Once you hit 'Get results', the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. 
 
