@@ -20,7 +20,7 @@ You also need to set 2 parameters.
 
 The application will make predictions at each location provided in the .csv file. If you wish to obtain predictions (preicted prevalence, probability of being a hotspot) you can include locations in the .csv file, leaving the n_trials and n_positive columns blank. An example of the expected input file is shown below.
 
-![](https://raw.githubusercontent.com/HughSt/HughSt.github.io/master/_posts/week1_files/figure-gfm/leaflet_esri.png)
+![](https://www.dropbox.com/s/f6gmxcwrxpxmdii/demo_data.png?dl=1)
 
 Once you hit 'Get predictions', the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. 
 
