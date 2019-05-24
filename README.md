@@ -1,5 +1,5 @@
-# ntd-shiny-points
-his application is designed to help understand whether having village level predictions of hotspots is useful to NTD programs. Given an input of infection/sero prevalence at villages, and locations of all other villages, the app is designed to automatically fit a geospatial model using climatological/environmental variables (currently elevation, distance to water, temperature, precipitation and seasonality) to provide two outputs:
+## Hotspot prediction and adaptive sampling prototype tool
+This application is designed to help understand whether having village level predictions of hotspots is useful to NTD programs. Given an input of infection/sero prevalence at villages, and locations of all other villages, the app is designed to automatically fit a geospatial model using climatological/environmental variables (currently elevation, distance to water, temperature, precipitation and seasonality) to provide two outputs:
 
 - Location of likely hotspot villages and
 - Optimal locations to next visit to collect more data in order to update your hotspot prediction map
