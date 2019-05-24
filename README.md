@@ -12,7 +12,7 @@ To use the app, you need to provide a .csv file of point level data (e.g. villag
 - `n_trials` - the number of people examined/tested 
 - `n_positive` - the number of people testing positive
 
-You also need to set 2 parameters. 
+You also need to set 2 parameters: 
 
 **Set hotspot prevalence threshold** - This sets the prevalence threshold that defines a hotspot. For example, a location might be considered a hotspot if prevalence of infection is >10%. In which case, set this threshold to 10%. 
 
@@ -20,7 +20,7 @@ You also need to set 2 parameters.
 
 The application will make predictions at each location provided in the .csv file. If you wish to obtain predictions (preicted prevalence, probability of being a hotspot) you can include locations in the .csv file, leaving the n_trials and n_positive columns blank. An example of the expected input file can be found [here](https://www.dropbox.com/s/l6t9cx51805to7n/Sh_liberia_withNA.csv?dl=1).
 
-Once you hit 'Get results', the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. 
+Once you hit `Get results`, the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. 
 
 The map shows 3 layers:
 
