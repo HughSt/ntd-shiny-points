@@ -20,7 +20,7 @@ You also need to set 2 parameters:
 
 The application will make predictions at each location provided in the .csv file. If you wish to obtain predictions (preicted prevalence, probability of being a hotspot) you can include locations in the .csv file, leaving the n_trials and n_positive columns blank. An example of the expected input file can be found [here](https://www.dropbox.com/s/l6t9cx51805to7n/Sh_liberia_withNA.csv?dl=1).
 
-Once you hit `Get results`, the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. 
+Once you hit `Get results`, the application will find the necessary climatological/environmental layers, fit a model and make predictions. These are then shown on the map and tables below. Please note that the first time the app is run for a country, the app takes a while to gather the necessary data. Subsequent calls of the algorithm will be much quicker.
 
 The map shows 3 layers:
 
