@@ -1,8 +1,8 @@
 ## Hotspot prediction and adaptive sampling prototype tool
 This application is designed to help understand whether having village level predictions of hotspots is useful to NTD programs. Given an input of infection/sero prevalence at villages, and locations of all other villages, the app is designed to automatically fit a geospatial model using climatological/environmental variables (currently elevation, distance to water, temperature, precipitation and seasonality) to provide two outputs:
 
-- Location of likely hotspot villages and
-- Optimal locations to next visit to collect more data in order to update your hotspot prediction map
+- Location of likely hotspot villages (probability that prevalence is greater than a user defined threshold) and
+- Optimal locations to next visit to collect more data in order to update your hotspot prediction map. Note that these are not the locations most likely to be hotspots, rather they are the places we are least certain about whether they are a hotspot or not. 
 
 To use the app, you need to provide a .csv file of point level data (e.g. villages or schools) containing at least the following columns (demo data provided using the link). 
 
@@ -25,11 +25,11 @@ Once you hit `Get results`, the application will find the necessary climatologic
 The map shows 3 layers:
 
 1. **Initial survey points** - The original survey data, colored by prevalence
-2. **Hotspot predictions** - Predictions at all locations (surveyed and unsurveyed) of hotspot class
-3. **Recommended survey points** - The locatoins of recommendated sites to conduct further surveys to improve hotspot predicitions. 
+2. **Hotspot predictions** - Predictions at all locations (surveyed and unsurveyed) of hotspot class (hotspot or not hotspot). By default the app classifies places as hotspots if there is a more than 50% chance it is a hotspot. If you wish to be more conservative about classifying a place as a hotspot, you can move the slider titled **Select areas where the probability of being a hotspot is at least** down. 
+3. **Recommended survey points** - The locations of recommendated sites to conduct further surveys to improve hotspot predicitions. 
 
 There are also 2 tables beneath the map showing 'Hotspot predictions' and 'Recommended survey points'. 
 
-Results can be downloaded either as tables or a GoeJSON which can be used in GIS/mapping software.
+Results can be downloaded either as tables or a GoeJSON which can be used in GIS/mapping software. 
 
 
